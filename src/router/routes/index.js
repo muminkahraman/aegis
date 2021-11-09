@@ -1,4 +1,6 @@
 // ** Routes Imports
+import AegisverticalRoutes from './Aegisvertical'
+
 import AppRoutes from './Apps'
 import FormRoutes from './Forms'
 import PagesRoutes from './Pages'
@@ -17,6 +19,7 @@ const DefaultRoute = '/dashboard/ecommerce'
 
 // ** Merge Routes
 const Routes = [
+  ...AegisverticalRoutes,
   ...DashboardRoutes,
   ...AppRoutes,
   ...PagesRoutes,
